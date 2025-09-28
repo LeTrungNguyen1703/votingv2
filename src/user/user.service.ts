@@ -1,8 +1,8 @@
 import { Inject, Injectable } from '@nestjs/common';
 import { CreateUserDto } from './dto/create-user.dto';
 import { PrismaService } from '../prisma/prisma.service';
-import { PrismaClientKnownRequestError } from '@prisma/client/runtime/edge';
 import * as bcrypt from 'bcrypt';
+import { PrismaClientKnownRequestError } from '@prisma/client/runtime/library';
 
 @Injectable()
 export class UserService {
